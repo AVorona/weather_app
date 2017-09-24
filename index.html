@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Local Weather</title>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="navError" class="error-output"><p>Seems your browser doesn't support geolocation function or you are very paranoid guy...</p>Seems your nrowser doesn't support geolocation function or you are very paranoid guy...</div>
+<div id="locationError" class="error-output"><p>
+	Oops! There are some troubles with API. Don't worry, my minions will fix it in split second.
+</p></div>
+<header>
+	<h1 class="heading">This is my little project for <a href="https://www.freecodecamp.com/" target="_blank">FreeCodeCamp.org</a> - Weather App.</h1>
+</header>
+	<main>
+		<div class="btn-wrapper"><p>Umbrella or sun glasses? Don't guess,just click the button below</p>
+		<p>And get the great lo-fi bonus!</p>
+	<button class="btn-cta show-me" id="getTheLocation" >Me, me</button>
+	<a class="btn-cta" href="https://www.youtube.com/watch?v=mRf3-JkwqfU" target="_blank">I change my mind, let me look at funny puppies</a>
+	</div>
+	<div id="dataOutput" class="data-output">
+		<div class="weather-output"></div>
+
+
+	<p class="weather-text"><span class="weather"></span><span class="descrp"></span></p>
+
+	<div class="video-wrapper">
+	<div class="video-title"></div>
+	
+	</div>
+	<div class="search-results"></div>
+	</div>
+
+	</main>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-size: 16px;
+}
+header {
+	padding-top: 1rem;
+}
+header h1 {
+    text-align: center;
+    font-size: 1.53rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+	color:rgba(16, 68, 178, 1);
+}
+
+a:hover {
+	color:rgba(229, 229, 229, 1);
+}
+
+.error-output {
+    display: none;
+    background-color: rgba(255, 50, 10, 1);
+    position: fixed;
+    width: 50vw;
+    max-width: 500px;
+    min-height: 150px;
+    line-height: 60px;
+    text-align: center;
+    left: 25%;
+    z-index: 10;
+}
+
+button {
+    border: none;
+}
+
+.btn-wrapper {
+    max-width: 558px;
+    width: 100%;
+    margin: 3.66rem auto 4.55rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(28, 84, 204, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 1.33em 1.66em;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.btn-cta:hover {
+    background-color: rgba(16, 68, 178, 1);
+}
+
+.btn-cta.show-me {
+    margin-right: 1rem;
+    float: left;
+}
+
+
+.data-output {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/*******OUTUT_THE_WEATHER*******/
+
+.weather-output {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(179, 255, 35, 1);
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.weather-output p {
+    text-align: center;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.45;
+    font-size: 1.125rem;
+    padding: 1rem 0rem;
+}
+
+.location {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.location span {
+    display: inline-block;
+}
+
+.weather {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 15%;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    font-size: 0.88em;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.temp {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+}
+
+.descrp {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 15%;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+}
+
+.switcher-temp {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5;
+    cursor: pointer;
+}
+
+.switcher-temp {
+    width: 100%;
+    width: 100px;
+    background-color: rgba(255, 50, 10, 1);
+    padding: 0.5em 0.66em;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*******OUTUT_VIDEO*******/
+
+.search-results li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.33rem;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 1.66rem;
+}
+
+.search-results a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-results img {
+    margin-right: 1.66rem;
+}
+
+
+/*youtube player*/
+
+.video-wrapper {
+    -webkit-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 40px auto;
+}
+
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:545px) {
+  .btn-wrapper {
+    text-align:center;
+  }
+  .btn-cta.show-me {
+    margin:0.88rem auto;
+    float:none;
+  }
+}
